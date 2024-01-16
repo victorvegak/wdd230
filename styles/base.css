@@ -20,9 +20,9 @@ header {
 }
 
 header img {
-    margin-right: 25px;
-    height: 100;
-    width: 75;
+    margin-right: 5em;
+    height: 100px;
+    width: 75px;
     box-shadow: 0 4px 8px rgba(0, 5, 5, 5);
 
 }
@@ -57,6 +57,12 @@ section {
     border: 1px solid #ddd;
     border-radius: 8px;
     margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 3, 4, 5);
+}
+
+section li {
+    padding: 5px;
+    margin-left: 10px;
 }
 
 .card {
@@ -68,6 +74,8 @@ section {
     margin-bottom: 15px;
     padding: 20px;
 }
+
+
 
 h1 {
     border-bottom: 2px solid black;
@@ -102,21 +110,19 @@ nav a {
 nav a:hover {
     text-decoration: overline;
     background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid #fff;
 }
 
-:hover.active {
-    color: yellow;
+nav .active {
+    background-color: #192125;
 }
 
 ul {
     list-style: none;
-    margin-bottom: 5px;
-    padding: 15px;
+    margin-bottom: 10px;
 }
 
-ul li {
-    margin-bottom: 5px;
-}
+
 
 footer {
     background-color: #3852c5;
