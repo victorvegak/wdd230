@@ -33,6 +33,11 @@ span {
     color: white;
 }
 
+#currentYear {
+    font-size: 15px;
+    margin-right: 15px;
+}
+
 header,
 main {
     max-width: 800px;
