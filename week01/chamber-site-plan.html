@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber of Commerce Site Plan</title>
+    <title>Victor Vega - WDD 230 - Chamber of Commerce Site Plan</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development - Victor Manuel Vega - Chamber Site Plan" />
+    <meta name="Author" content="Victor Manuel Vega">
     <link rel="stylesheet" href="styles/chamber-plan.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,8 +16,8 @@
 <body>
     <!--Site Name-->
     <section id="site-name">
-        <h1>Managua Chamber Of Commerce</h2>
-            <p>This name represents the city where the Chamber operates and emphasizes its purpose. </p>
+        <h1>Managua Chamber Of Commerce</h1>
+        <p>This name represents the city where the Chamber operates and emphasizes its purpose. </p>
     </section>
 
     <!--Site Purpose-->
@@ -66,19 +68,17 @@
         <img src="images/mobile-wireframe.png" alt="mobile Wireframe">
         <img src="images/desktop-wireframe.png" alt="desktop Wireframe">
     </section>
+    <footer>
+        <p>
+            &copy; <span id="currentYear"></span> Victor Vega, Nicaragua
+            <!-- Optionally, a flag image -->
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = 'Last modified: ' + document.lastModified;
+    </script>
 </body>
-<footer>
-
-    <p>
-        &copy; <span id="currentYear"></span> Victor Vega, Nicaragua
-        <!-- Optionally, a flag image -->
-    </p>
-    <p id="lastModified"></p>
-</footer>
-<script>
-    document.getElementById('currentYear').textContent = new Date().getFullYear();
-    document.getElementById('lastModified').textContent = 'Last modified: ' + document.lastModified;
-</script>
-
 
 </html>
