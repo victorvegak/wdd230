@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --primary-color: #336699;
+    --secondary-color: #99CC99;
+}
+
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4em;
+    font-size: 18px;
+    text-align: center;
+    align-content: center;
+    border: 1px solid #3f0707;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2 {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+h1 {
+    font-weight: bold;
+    font-style: oblique;
+    color: var(--primary-color);
+    font-size: 2em;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: inside;
+}
+
+#site-name h1 {
+    border: 1px solid #3f0707;
+    background-color: #b7c06a;
+    border-radius: 8px 8px 8px 8px;
+
+}
+
+footer {
+    background-color: #b7c06a;
+    color: #336699;
+    text-align: center;
+    border-radius: 8px 8px 8px 8px;
+    margin-top: 2em;
+    border: 1px solid #3f0707;
+}
+
+
+@media (min-width: 640px) {
+
+    main {
+        grid-template-columns: 1fr 1fr;
+        /* Two columns on larger screens */
+
+    }
+
+
+
+}

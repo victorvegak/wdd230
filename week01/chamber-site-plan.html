@@ -5,18 +5,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chamber of Commerce Site Plan</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="styles/chamber-plan.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <h1>Chamber of Commerce</h1>
-    </header>
-    <main>
+    <!--Site Name-->
+    <section id="site-name">
+        <h1>Managua Chamber Of Commerce</h2>
+            <p>This name represents the city where the Chamber operates and emphasizes its purpose. </p>
+    </section>
 
+    <!--Site Purpose-->
+    <section id="site-purpose">
+        <h2>Site Purpose</h2>
+        <p>Managua Chamber of Commerce aims to: </p>
+        <ul>
+            <li>Promote local businesses through member services</li>
+            <li>Foster economic and community development</li>
+            <li>Advocates for public policies that balance economic prosperity</li>
+        </ul>
+    </section>
 
-    </main>
+    <!--Scenarios-->
+    <section id="scenarios">
+        <h2>Scenarios</h2>
+        <ul>
+            <li>How can I become a member of the chamber and what benefits does membership offer?</li>
+            <li>Is there a calendar of upcoming local business events, and how can I participate?</li>
+            <li>Where can I access resources and guides for starting a new business in the area?</li>
+        </ul>
+    </section>
 
+    <!--Color Schema-->
+    <section id="color-schema">
+        <h2>Color Schema</h2>
+        <p>Our selected color scheme includes:</p>
+        <ul>
+            <li>Primary Color(#336699) used for headings</li>
+            <li>Secondary Color (#99CC99) - used for background</li>
+        </ul>
+    </section>
+
+    <!--Typography-->
+    <section id="typography">
+        <h2>Typography</h2>
+        <p>We will use the following fonts:</p>
+        <ul>
+            <li>Heading Font: 'Robot', sans-serif</li>
+            <li>Body Font: 'Open Sans', sans-serif</li>
+        </ul>
+    </section>
+
+    <!--Wireframe-->
+    <section id="wireframe">
+        <h2>Wireframe</h2>
+        <p>Wireframe sketches for home page layout:</p>
+        <img src="images/mobile-wireframe.png" alt="mobile Wireframe">
+        <img src="images/desktop-wireframe.png" alt="desktop Wireframe">
+    </section>
 </body>
+<footer>
+
+    <p>
+        &copy; <span id="currentYear"></span> Victor Vega, Nicaragua
+        <!-- Optionally, a flag image -->
+    </p>
+    <p id="lastModified"></p>
+</footer>
+<script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+    document.getElementById('lastModified').textContent = 'Last modified: ' + document.lastModified;
+</script>
+
 
 </html>
