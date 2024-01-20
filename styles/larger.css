@@ -1,10 +1,17 @@
 @media (min-width: 640px) {
     nav ul {
         display: flex;
+        flex-direction: row;
     }
 
     nav ul li {
         flex: 1 1 100%;
+        display: block;
+    }
+
+    #hamburger-btn {
+        display: none;
+        /* Hide the mobile menu on larger screens */
     }
 
     main {

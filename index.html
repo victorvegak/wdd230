@@ -13,9 +13,9 @@
     <meta property="og:url" content="https://victorvegak.github.io/wdd230/" />
     <meta property="og:image"
         content="https://www.visitcentroamerica.com/wp-content/uploads/2017/09/ver-centroamerica-nicaragua-managua-03.jpg" />
-    <meta property="fb:1552021892264430" content="Home Page" />
     <link href="styles/base.css" rel="stylesheet">
     <link href="styles/larger.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
@@ -26,8 +26,12 @@
     <header>
         <img src="images/profile.png" alt="Victor Vega" width="75" height="100">
         <span>Victor Vega</span>
+        <div id="mode">
+            🕶️
+        </div>
     </header>
     <nav> <!--nav>ul>li*4>a-->
+        <button id="hamburger-btn"></button>
         <ul>
             <li class="active"><a href="index.html">Home</a></li>
             <li><a href="#">Chamber</a></li>
@@ -43,7 +47,9 @@
                 <li>Week 01: <a href="week01/holygrail.html">Layout | </a> <a href="week01/media-query.html">Media
                         Query</a>
                 </li>
-                <li>Week 02: <a href="week02/design.html">Design |</a></li>
+                <li>Week 02: <a href="week02/design.html">Design |</a> <a
+                        href="https://codepen.io/victorvegak/pen/PoLmrKG">Responsive Menu |</a><a
+                        href="week02/bom.html"> BOM |</a></li>
                 <li>Week 03: <a href="#"></a></li>
                 <li>Week 04: <a href="#"></a></li>
                 <li>Week 05: <a href="#"></a></li>
@@ -67,6 +73,8 @@
         document.getElementById('currentYear').textContent = new Date().getFullYear();
         document.getElementById('lastModified').textContent = 'Last modified: ' + document.lastModified;
     </script>
+    <script src="scripts/responsive-menu.js"></script>
+
 </body>
 
 </html>
