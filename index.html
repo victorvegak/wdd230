@@ -23,7 +23,8 @@
 
 <body>
     <header>
-        <img src="images/profile.png" alt="Victor Vega" width="75" height="100">
+        <source media="(max-width: 75px)" srcset="images/profile.webp" width="75" height="100">
+        <img src="images/profile.webp" alt="Victor Vega" width="75" height="100">
         <span>Victor Vega</span>
         <div id="mode">
             🕶️
@@ -39,6 +40,22 @@
         </ul>
     </nav>
     <main>
+        <div class="hero">
+            <picture>
+                <!--<source srcset="images/st-george-temple.webp" media="(max-width: 400px)">
+                <source srcset="images/st-george-temple-large.webp" media="(max-width: 960px)">
+                <img src="images/st-george-temple-large.webp" alt="Latter-day Temple" width="960" height="300">-->
+                <source media="(max-width: 400px)" srcset="images/st-george-temple.webp" width="400" height="400">
+                <source media="(min-width: 401px) and (max-width: 960px)" srcset="images/st-george-templel.webp">
+                <source media="(min-width: 960px)" srcset="images/st-george-temple-large.webp">
+                <img src="images/st-george-templel.webp" alt="Picture of the Draper Utah Temple" loading="lazy"
+                    width="960" height="300">
+
+            </picture>
+            <div class="herolabel">
+                <p>St. George Utah Temple</p>
+            </div>
+        </div>
         <h1>WDD 230: Web Frontend Development</h1>
         <section>
             <h2 class="card">Learning Activities</h2>
@@ -58,9 +75,13 @@
         </section>
         <section>
             <h2 class="card">Information</h2>
-            <p></p>
+            <p>Visit Count: <span class="visits"></span></p>
         </section>
     </main>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d249737.54328131795!2d-86.27034638648298!3d12.033253588551405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x8f740c91706b1593%3A0x3b8c904dc8ceb48c!2sGranada!3m2!1d11.9344073!2d-85.9560005!4m5!1s0x8f73ff2ceb4744b1%3A0xc5294cd72c6bd676!2sManagua%2C%20Managua!3m2!1d12.1305663!2d-86.2395818!5e0!3m2!1ses-419!2sni!4v1706162339177!5m2!1ses-419!2sni"
+        width="960" height="300" style="border:0;" allowfullscreen="modified" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
     <footer>
         <p>
             &copy; <span id="currentYear"></span> Victor Vega, Nicaragua
@@ -73,7 +94,7 @@
         document.getElementById('lastModified').textContent = 'Last modified: ' + document.lastModified;
     </script>
     <script src="scripts/responsive-menu.js"></script>
-
+    <script src="scripts/visitCounter.js"></script>
 </body>
 
 </html>

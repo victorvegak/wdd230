@@ -40,12 +40,12 @@ span {
 
 header,
 main {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 main {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
     display: grid;
@@ -55,8 +55,42 @@ main {
 
 }
 
+.hero {
+
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, .1);
+    height: 300px;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.herolabel {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background: radial-gradient(#fff, #4d5897);
+    border: 1px solid rgba(0, 0, 0, .75);
+    padding: 1.5rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.75;
+}
+
+.herolabel p {
+    margin: 0;
+    padding: .25rem;
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: "Great Vibes", serif;
+
+}
+
+
 section {
-    max-width: 800px;
+    max-width: 960px;
     /*margin: 0 auto;*/
     /*padding: 20px;*/
     border: 1px solid #ddd;
@@ -86,6 +120,8 @@ h1 {
     border-bottom: 2px solid black;
     text-align: center;
     font-size: 1.5em;
+
+
 }
 
 h2 {
@@ -95,7 +131,7 @@ h2 {
 nav {
     background-color: #36454f;
     margin: 0 auto;
-    max-width: 800px
+    max-width: 1000px;
 }
 
 
@@ -170,6 +206,13 @@ nav li a {
     font-size: 2rem;
 }
 
+iframe {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 15px 15px 15px 15px;
+
+}
 
 footer {
     background-color: #3852c5;
@@ -177,5 +220,5 @@ footer {
     padding: 10px;
     text-align: center;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 1000px;
 }
