@@ -1,8 +1,8 @@
-
-h1{
+h1 {
     text-align: center;
 }
-main{
+
+main {
     margin: 0 auto;
     width: 400px;
     display: flex;
@@ -12,7 +12,8 @@ main{
 img {
     width: 100%;
     background: #000;
-    animation: fade 20s;
+    animation: fade 10s;
+    -webkit-animation: fade 10s;
 }
 
 footer {
@@ -23,8 +24,8 @@ footer {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 20;
     }
 }
-
