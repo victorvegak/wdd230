@@ -5,16 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Victor Vega - WDD 230 - Web Frontend Development</title>
-    <meta name="description" content="WDD 230 - Web Frontend Development - Victor Manuel Vega - Chamber of Commerce" />
-    <meta name="Author" content="Victor Manuel Vega">
-    <meta property="og:title" content="Victor Vega - WDD 230 - Web Frontend Development - Chamber of Commerce" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://victorvegak.github.io/wdd230/chamber/" />
+    <meta name="description" content="WDD 230 - Web Frontend Development - Victor Manuel Vega - Chamber of Commerce">
+    <meta name="author" content="Victor Manuel Vega">
+    <meta property="og:title" content="Victor Vega - WDD 230 - Web Frontend Development - Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://victorvegak.github.io/wdd230/chamber/">
     <meta property="og:image"
-        content="https://www.visitcentroamerica.com/wp-content/uploads/2017/09/ver-centroamerica-nicaragua-managua-03.jpg" />
+        content="https://www.visitcentroamerica.com/wp-content/uploads/2017/09/ver-centroamerica-nicaragua-managua-03.jpg">
     <link rel="icon" sizes="144x144" href="favicon.ico">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="/chamber/styles/base.css">
+    <link rel="stylesheet" href="/chamber/styles/larger.css">
+    <link rel="stylesheet" href="/chamber/styles/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
     <script src="script/#"></script>
 </head>
 
@@ -22,10 +25,12 @@
     <header>
         <h1></h1>
         <nav>
+            <button id="hamburger-btn"></button>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
             </ul>
         </nav>
     </header>
@@ -61,12 +66,16 @@
 
     <footer>
         <!--Contact Information-->
-        <address>
-
-        </address>
-
-
+        <p>
+            &copy; <span id="currentYear"></span> Victor Vega, Nicaragua - WDD 230
+            <!-- Optionally, a flag image -->
+        </p>
+        <p id="lastModified"></p>
     </footer>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = 'Last modified: ' + document.lastModified;
+    </script>
 </body>
 
 </html>
