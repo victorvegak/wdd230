@@ -17,24 +17,21 @@
     <link rel="stylesheet" href="/chamber/styles/larger.css">
     <link rel="stylesheet" href="/chamber/styles/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-
-    <script src="script/#"></script>
 </head>
 
 <body>
     <header>
         <h1></h1>
-        <nav>
-            <button id="hamburger-btn"></button>
-            <ul>
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="#">Discover</a></li>
-                <li><a href="#">Directory</a></li>
-                <li><a href="#">Join</a></li>
-            </ul>
-        </nav>
     </header>
-
+    <nav>
+        <button id="hamburger-btn"></button>
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+        </ul>
+    </nav>
     <main>
         <!--hero Image-->
         <section class="hero">
@@ -76,6 +73,7 @@
         document.getElementById('currentYear').textContent = new Date().getFullYear();
         document.getElementById('lastModified').textContent = 'Last modified: ' + document.lastModified;
     </script>
+    <script src="/chamber/script/responsive-menu.js"></script>
 </body>
 
 </html>
