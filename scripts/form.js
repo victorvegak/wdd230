@@ -1,4 +1,4 @@
-const rangevalue = document.getElementById("rangeValue");
+const rangevalue = document.getElementById("rangevalue");
 const range = document.getElementById("r");
 
 // RANGE event listener
