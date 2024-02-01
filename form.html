@@ -5,61 +5,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Victor Vega - WDD 230 - Web Frontend Development - Form></title>
-    <meta name="description" content="WDD 230 - Web Frontend Development - Victor Vega - Form">
     <meta name="author" content="Victor Vega">
-    <meta property="og:title" content="WDD230 assignment homepage">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://victorvegak.github.io/wdd230/index.html">
-    <meta property="og:image"
-        content="https://www.visitcentroamerica.com/wp-content/uploads/2017/09/ver-centroamerica-nicaragua-managua-03.jpg">
-    <link href="styles/base.css" rel="stylesheet">
-    <link href="styles/larger.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles/form.css">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta name="description" content="WDD 230 - Web Frontend Development - Victor - Form>
+    <link rel=" preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="icon" sizes="144x144" href="favicon.ico">
+
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+    <link href="styles/form.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+
+
+    <meta property="og:title" content="WDD230 assignment homepage">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://www.visitcentroamerica.com/wp-content/uploads/2017/09/ver-centroamerica-nicaragua-managua-03.jpg">
+    <meta property="og:url" content="https://victorvegak.github.io/wdd230/index.html">
+
+
 </head>
 
 <body>
     <header>
-        <img src="images/profile.webp" alt="Victor Vega" width="75" height="100">
-        <span>Victor Vega</span>
+        <img src="images/profile.webp" alt="Ramon Vargas" width="75" height="100">
+        <span>Ramon Vargas</span>
         <div id="mode">
             🕶️
         </div>
+
     </header>
-    <nav> <!--nav>ul>li*4>a-->
+
+    <nav>
         <button id="hamburger-btn"></button>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="chamber/index.html">Chamber</a></li>
             <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
-            <li><a class="active" href="#">Form</a></li>
+            <li><a class="active" href="form.html">Form</a></li>
         </ul>
     </nav>
+
     <main>
-        <form action="record.html" method="get" onsubmit="return validateForm ()">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
+        <form action="record.html" method="get">
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}" required>
+            </div>
+            <div>
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+            </div>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" pattern="[a-zA-ZO-9]{8,} required">
-            <div class="error-message" id="password-error"></div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+                    title="Please enter a valid email address">
+            </div>
 
-            <label for="confirmPassword">Password repeated for confirmation:</label>
-            <input type="password" name="confirmPassword" id="confirmPassword" required>
-            <div class="error-message" id="confirmPassword-error"></div>
-
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" required pattern="[a-zA-ZO-9._%+-]+@byi\.edu$">
-            <div class="error-message" id="email-error"></div>
-
-            <label for="pageRating">Page Rating:</label>
-            <div id="rangeValue">0</div>
+            <label for="r">Page Rating:</label>
+            <div id="rangevalue">0</div>
             <input type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues">
-
 
             <button type="submit">Submit</button>
         </form>
