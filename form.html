@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor Vega - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development - Victor Vega - course assignment portal">
+    <meta name="author" content="Victor Vega">
+    <meta property="og:title" content="Victor Vega - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://victorvegak.github.io/wdd230/index.html">
+    <meta property="og:image"
+        content="https://www.visitcentroamerica.com/wp-content/uploads/2017/09/ver-centroamerica-nicaragua-managua-03.jpg">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" sizes="144x144" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <source media="(max-width: 75px)" srcset="images/profile.webp" width="75" height="100">
+        <img src="images/profile.webp" alt="Victor Vega" width="75" height="100">
+        <span>Victor Vega</span>
+        <div id="mode">
+            🕶️
+        </div>
+    </header>
+    <nav> <!--nav>ul>li*4>a-->
+        <button id="hamburger-btn"></button>
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="record.html" method="get" onsubmit="return validateForm ()">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" pattern="[a-zA-ZO-9]{8,} required">
+            <div class="error-message" id="password-error"></div>
+
+            <label for="confirmPassword">Password repeated for confirmation:</label>
+            <input type="password" name="confirmPassword" id="confirmPassword" required>
+            <div class="error-message" id="confirmPassword-error"></div>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required pattern="[a-zA-ZO-9._%+-]+@byi\.edu$">
+            <div class="error-message" id="email-error"></div>
+
+            <label for="pageRating">Page Rating:</label>
+            <div id="rangeValue">0</div>
+            <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1"
+                oninput="updateRangeValue()">
+
+
+            <button type="submit">Submit</button>
+        </form>
+
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentYear"></span> Victor Vega, Nicaragua
+            <!-- Optionally, a flag image -->
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/responsive-menu.js"></script>
+    <script src="scripts/dark-mode.js"></script>
+    <script src="scripts/visit-counter.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+
+</html>
