@@ -1,13 +1,65 @@
 {
-    "week": "Week 1",
-    "links": [
+    "weeks": [
         {
-            "url": "week01/holygrail.html",
-            "title": "HG Layout"
-        },
-        {
-            "url": "week01/media-query.html",
-            "title": "MQueries"
+            "week": "Week 1",
+            "links": [
+                {
+                    "url": "week01/holygrail.html",
+                    "title": "HG Layout"
+                },
+                {
+                    "url": "week01/media-query.html",
+                    "title": "MQueries"
+                }
+            ],
+            "week": "Week 2",
+            "links": [
+                {
+                    "url": "week02/bom.html",
+                    "title": " BOM-25"
+                },
+                {
+                    "url": "week02/design.html",
+                    "title": "Design"
+                },
+                {
+                    "url": "#",
+                    "title": "Design"
+                }
+            ],
+            "week": "Week 3",
+            "links": [
+                {
+                    "url": "week03/bom.html",
+                    "title": "Bom"
+                },
+                {
+                    "url": "week03/lazyload.html",
+                    "title": "Lazy"
+                }
+            ],
+            "week": "Week 4",
+            "links": [
+                {
+                    "url": "#",
+                    "title": "HG Layout"
+                },
+                {
+                    "url": "#",
+                    "title": "MQueries"
+                }
+            ],
+            "week": "Week 5",
+            "links": [
+                {
+                    "url": "week01/holygrail.html",
+                    "title": "HG Layout"
+                },
+                {
+                    "url": "week01/media-query.html",
+                    "title": "MQueries"
+                }
+            ]
         }
     ]
 }

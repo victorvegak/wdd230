@@ -5,13 +5,26 @@ async function getLinks() {
     const response = await fetch(linksURL);
     const data = await response.json();
     displayLinks(data)
-    //console.log(data);//
+    //console.log(data);
 }
-
 getLinks();
 
 const displayLinks = (weeks) => {
+
     weeks.forEach((week) => {
-        let card
+        const weekHeading = document.createElement('h2');
+        weekHeading.textContent = week.week;
+
+        const linksList = document.createElement('ul');
+
+        week.links.forEach((link) => {
+            const listItem = document.createElement('li');
+            const linkElement = document.createElement('a');
+            linkElement.textContent = link.title;
+            linkElement.setAttribute('href', baseURL + link.url);
+            listItem.appendChild(linkElement);
+            linksList.appendChild(listItem);
+        });
+
     });
 }
