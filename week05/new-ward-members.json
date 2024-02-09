@@ -1,0 +1,23 @@
+{
+    "familyName:": "",
+    "moveInDate": "",
+    "numberOfPeople": "",
+    "visitedByBishopric": "",
+    "familyMember": [
+        {
+            "name": "",
+            "gender": "",
+            "birthdate": ""
+        },
+        {
+            "name": "",
+            "gender": "",
+            "birthdate": ""
+        },
+        {
+            "name": "",
+            "gender": "",
+            "birthdate": ""
+        }
+    ]
+}
