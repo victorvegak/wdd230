@@ -11,7 +11,9 @@
                     "url": "week01/media-query.html",
                     "title": "MQueries"
                 }
-            ],
+            ]
+        },
+        {
             "week": "Week 2",
             "links": [
                 {
@@ -26,7 +28,9 @@
                     "url": "#",
                     "title": "Design"
                 }
-            ],
+            ]
+        },
+        {
             "week": "Week 3",
             "links": [
                 {
@@ -37,7 +41,9 @@
                     "url": "week03/lazyload.html",
                     "title": "Lazy"
                 }
-            ],
+            ]
+        },
+        {
             "week": "Week 4",
             "links": [
                 {
@@ -48,18 +54,8 @@
                     "url": "#",
                     "title": "MQueries"
                 }
-            ],
-            "week": "Week 5",
-            "links": [
-                {
-                    "url": "week01/holygrail.html",
-                    "title": "HG Layout"
-                },
-                {
-                    "url": "week01/media-query.html",
-                    "title": "MQueries"
-                }
             ]
-        }
+        },
+        {}
     ]
 }
