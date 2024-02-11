@@ -14,10 +14,8 @@ const displayLinks = (weeks) => {
     weeks.forEach((week) => {
         const weekHeading = document.createElement('h2');
         weekHeading.textContent = week.week;
-
-        const linksList = document.createElement('ul');
-
         week.links.forEach((link) => {
+            const linksList = document.createElement('ul');
             const listItem = document.createElement('li');
             const linkElement = document.createElement('a');
             linkElement.textContent = link.title;

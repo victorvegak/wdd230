@@ -12,8 +12,8 @@ main {
 img {
     width: 100%;
     background: #000;
-    animation: fade 10s;
-    -webkit-animation: fade 10s;
+    animation: fade 5s;
+    -webkit-animation: fade 5s;
 }
 
 footer {
@@ -26,6 +26,6 @@ footer {
     }
 
     100% {
-        opacity: 20;
+        opacity: 2;
     }
 }

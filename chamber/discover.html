@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Managua Chamber Of Commerce</title>
+    <meta name="description"
+        content="WDD 230 - Web Frontend Development - Victor Manuel Vega - Chamber of Commerce - Discover">
+    <meta name="author" content="Victor Manuel Vega">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--social media meta tags-->
+    <meta property="og:title"
+        content="Victor Vega - WDD 230 - Web Frontend Development -  Managua Chamber of Commerce - Discover">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://victorvegak.github.io/wdd230/chamber/">
+    <meta property="og:image"
+        content="https://www.visitcentroamerica.com/wp-content/uploads/2017/09/ver-centroamerica-nicaragua-managua-03.jpg">
+    <!--favicon link-->
+    <link rel="icon" sizes="144x144" href="favicon.ico">
+    <!--styles-->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+</head>
+
+<body>
+    <span id="banner" style="display: none;"></span>
+    <header>
+        <img id="header-logo" src="images/header-logo.webp" alt="Managua Chamber Logo" width="100" height="100">
+        <h1>Managua City Chamber Of Commerce</h1>
+        <div id="social-medias">
+            <a href="https://www.facebook.com/"><img id="link-facebook" src="images/facebook.png" alt="Facebook Logo"
+                    width="64" height="64"></a>
+            <a href="https://www.twitter.com/"><img id="link-twitter" src="images/twitter.png" alt="Twitter Logo"
+                    width="64" height="64"></a>
+        </div>
+        <nav>
+            <button id="hamburger-btn"></button>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <body>
+        <div class="container">
+            <aside class="sidebar">
+                <!-- Sidebar content -->
+                <div id="visitMessage">
+                    <h2>Managua</h2>
+                    <p>Managua is the capital and largest city of Nicaragua, and one of the largest cities in Central
+                        America.<br>
+                        <br>Located on the shores of Lake Managua, the city had an estimated population of 1,055,247 as
+                        of 2020, and a population of 1,401,687 in its metropolitan area. The city also serves as the
+                        seat of Managua Department.
+                    </p>
+                </div>
+                <div id="managua-activities">
+                    <h2>Activities</h2>
+                    <p>Nicaragua's active volcanoes, including Momotombo, Masaya, Concepción, and Maderas, periodically
+                        erupt, showcasing
+                        Earth's dynamic forces. While attracting visitors, they also require constant monitoring to
+                        safeguard nearby
+                        communities. These volcanoes serve as captivating reminders of nature's power, balancing wonder
+                        with caution.<br>
+
+                        <br>For nature lovers, the Tiscapa Lagoon Natural Reserve offers hiking trails and panoramic
+                        vistas of the city.
+                        Additionally, Managua boasts a thriving arts scene, with galleries and theaters showcasing the
+                        country's diverse
+                        cultural heritage
+                    </p>
+                </div>
+                <div id="uni-houses">
+                    <h2>Some Upcoming Developments: </h2>
+
+                    <li>Infrastructure Projects: Managua is anticipating the launch of several infrastructure
+                        projects aimed at improving
+                        transportation networks, such as road expansions and public transportation upgrades.
+                    </li><br>
+                    <li>Commercial Ventures: There are plans for new shopping centers and entertainment
+                        complexes to
+                        be established in various
+                        parts of the city, offering residents and visitors more options for leisure and recreation.
+
+                    </li><br>
+                    <li>Technological Advancements: The city is embracing advancements in technology, with
+                        initiatives to enhance digital
+                        infrastructure and promote innovation hubs, fostering entrepreneurship and economic
+                        growth.
+                    </li><br>
+                </div>
+                <div class="calendar">
+                    <h2>Calendar</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Sun</th>
+                                <th>Mon</th>
+                                <th>Tue</th>
+                                <th>Wed</th>
+                                <th>Thu</th>
+                                <th>Fri</th>
+                                <th>Sat</th>
+                            </tr>
+                        </thead>
+                        <tbody id="calendar-body"></tbody>
+                    </table>
+                </div>
+                <div class="visits"> </div>
+
+
+            </aside>
+            <main class="main-content">
+                <!-- Main content area with lazy-loaded images -->
+                <img class="lazy1" src="images/managuamap.webp" alt="Map" loading="lazy" width="400" height="200" />
+                <img class="lazy2" src="images/demography.webp" alt="population" loading="lazy" width="400"
+                    height="200" />
+                <img class="lazy3" src="images/rotonda.webp" alt="Rotonda" loading="lazy" width="400" height="200" />
+                <img class="lazy4" src="images/volcano.webp" alt="Volcano" loading="lazy" width="400" height="200" />
+                <img class="lazy5" src="images/depas.webp" alt="New Houses" loading="lazy" width="400" height="200" />
+                <img class="lazy6" src="images/uni.webp" alt="University" loading="lazy" width="400" height="200" />
+            </main>
+        </div>
+    </body>
+
+    <footer>
+        <!--Contact Information-->
+        <div class="info-company">
+            <img id="footer-logo" src="images/header-logo.webp" alt="Managua Chamber Logo" width="150" height="150">
+            <h3>Managua Chamber Of Commerce</h3>
+        </div>
+        <div class="info-contact">
+            <p id="address"><strong>Bo.El Eden - Managua - Managua - Nicaragua</strong></p>
+            <p id="email"><strong>contactus@managuachamber.nic</strong></p>
+            <p id="phone"><strong>(+505)800-0000</strong></p>
+            <p id="map"><a href="index.html">Location Map</a></p>
+        </div>
+        <div class="info-stats">
+            <p>&copy; <span id="currentYear"></span> Managua Chamber | <span id="lastModified"></span> </p>
+        </div>
+    </footer>
+    <script src="script/getDate.js"></script>
+    <script src="script/responsive-menu.js"></script>
+    <script src="script/visitCounter.js"></script>
+    <script src="script/lazy-load.js"></script>
+    <script src="script/calendar.js"></script>
+</body>
+
+</html>
