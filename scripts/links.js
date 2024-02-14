@@ -1,28 +1,38 @@
 const baseURL = "https://victorvegak.github.io/wdd230/";
 const linksURL = "https://victorvegak.github.io/wdd230/data/links.json";
+const learningActivitiesSection = document.getElementById("cards");
 
 async function getLinks() {
-    const response = await fetch(linksURL);
-    const data = await response.json();
-    displayLinks(data)
-    //console.log(data);
+    try {
+        const response = await fetch(linksURL);
+        if (!response.ok) {
+            throw new Error('Failed to fetch links');
+        }
+        const data = await response.json();
+        displayLinks(data.weeks);
+    } catch (error) {
+        console.error('Error fetching links:', error.message);
+    }
 }
-getLinks();
 
-const displayLinks = (weeks) => {
+function displayLinks(weeks) {
+    weeks.forEach((weekData) => {
+        const card = document.createElement("section");
+        const weekHeader = document.createElement("h3");
+        weekHeader.textContent = weekData.week;
+        card.appendChild(weekHeader);
 
-    weeks.forEach((week) => {
-        const weekHeading = document.createElement('h2');
-        weekHeading.textContent = week.week;
-        week.links.forEach((link) => {
-            const linksList = document.createElement('ul');
-            const listItem = document.createElement('li');
-            const linkElement = document.createElement('a');
-            linkElement.textContent = link.title;
-            linkElement.setAttribute('href', baseURL + link.url);
-            listItem.appendChild(linkElement);
-            linksList.appendChild(listItem);
+        weekData.links.forEach((link) => {
+            const activityLink = document.createElement("a");
+            activityLink.textContent = link.title;
+            activityLink.href = baseURL + link.url;
+            activityLink.target = "_blank";
+            card.appendChild(activityLink);
+            card.appendChild(document.createElement("br")); // Line break between links
         });
 
+        learningActivitiesSection.appendChild(card);
     });
 }
+
+getLinks();
