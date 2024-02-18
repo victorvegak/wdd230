@@ -435,3 +435,122 @@ footer {
     background-color: #f0f0f0;
     font-weight: bold;
 }
+
+/*******JOIN****************/
+
+.join-container {
+    padding-bottom: 10px;
+    box-shadow: 0px 0px 0px 1px var(--shadow);
+    display: grid;
+    grid-template-columns: 1fr;
+
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.join-h2 {
+    padding: 10px;
+    background-color: var(--accent2);
+    color: var(--secondary);
+}
+
+.join-p {
+    padding: 10px 10px 10px 10px;
+    margin: 0px 4px 4px 0px;
+
+}
+
+
+/***************FORM*******************/
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid var(--black);
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: var(--black);
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top,
+form div {
+    display: block;
+    padding-top: 1rem;
+    color: var(--black);
+}
+
+#memberships-select label {
+    display: block;
+}
+
+#mem-description {
+    width: 100%;
+    height: auto;
+
+}
+
+#mem-description p {
+    margin: 10px auto;
+}
+
+#memberships-select,
+#mem-description {
+    display: block;
+}
+
+form label.top input,
+form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0, 0.1);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #161616;
+
+}
+
+#submit-b {
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    max-width: 600px;
+    margin: 0px auto;
+    border-radius: 30px;
+    font-family: var(--paragraph);
+    font-weight: 500;
+    font-size: 24px;
+    border: none;
+    padding: 5px 5px;
+    margin-bottom: 10px;
+    background-color: var(--bad);
+    color: var(--white);
+    box-shadow: 0px 2px 5px 0px var(--shadow);
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+#join {}

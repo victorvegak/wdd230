@@ -51,12 +51,16 @@
             "week": "Week 4",
             "links": [
                 {
-                    "url": "#",
-                    "title": "HG Layout"
+                    "url": "https://codepen.io/victorvegak/pen/MWxVybQ",
+                    "title": "Pseudo-Class Fun"
                 },
                 {
-                    "url": "#",
-                    "title": "MQueries"
+                    "url": "week04/images/css-combinators.png",
+                    "title": "Css Combinators"
+                },
+                {
+                    "url": "week04/tablebuilds.html",
+                    "title": "Table Builds"
                 }
             ]
         },
