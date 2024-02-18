@@ -553,4 +553,26 @@ form label.top input:required:valid {
     border-left: green solid 6px;
 }
 
-#join {}
+
+/*** Thanks **/
+.thanks-container {
+    padding-bottom: 10px;
+    box-shadow: 0px 0px 3px 4px var(--shadow);
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 30px;
+    max-width: 1200px;
+
+}
+
+.box-h1 {
+    padding: 10px;
+    background-color: var(--accent2);
+    color: var(--secondary);
+}
+
+.box-p {
+    padding: 10px 10px 10px 10px;
+    margin: 0px 4px 4px 0px;
+    font-size: 2cap;
+}

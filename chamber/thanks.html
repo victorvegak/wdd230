@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Managua Chamber Of Commerce</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development - Victor Manuel Vega - Chamber of Commerce">
+    <meta name="author" content="Victor Manuel Vega">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--social media meta tags-->
+    <meta property="og:title" content="Victor Vega - WDD 230 - Web Frontend Development -  Managua Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://victorvegak.github.io/wdd230/chamber/">
+    <meta property="og:image"
+        content="https://www.visitcentroamerica.com/wp-content/uploads/2017/09/ver-centroamerica-nicaragua-managua-03.jpg">
+    <!--favicon link-->
+    <link rel="icon" sizes="144x144" href="favicon.ico">
+    <!--styles-->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+</head>
+
+<body>
+    <span id="banner" style="display: none;"></span>
+    <header>
+        <img id="header-logo" src="images/header-logo.webp" alt="Managua Chamber Logo" width="100" height="100">
+        <h1>Managua City Chamber Of Commerce</h1>
+        <div id="social-medias">
+            <a href="https://www.facebook.com/"><img id="link-facebook" src="images/facebook.png" alt="Facebook Logo"
+                    width="64" height="64"></a>
+            <a href="https://www.twitter.com/"><img id="link-twitter" src="images/twitter.png" alt="Twitter Logo"
+                    width="64" height="64"></a>
+        </div>
+        <nav>
+            <button id="hamburger-btn"></button>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="/chamber/discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="thanks">
+        <div class="thanks-container">
+            <h1 class="box-h1">Thank You!</h1>
+            <p class="box-p">Your application to the Managua City Chamber has been successfully submitted. You can
+                expect to hear back from us within
+                3-7 business days. Thank you for your interest and patience. We look forward to connecting with you
+                soon.</p>
+        </div>
+    </main>
+
+    <footer>
+        <!--Contact Information-->
+        <div class="info-company">
+            <img id="footer-logo" src="images/header-logo.webp" alt="Managua Chamber Logo" width="150" height="150">
+            <h3>Managua Chamber Of Commerce</h3>
+        </div>
+        <div class="info-contact">
+            <p id="address"><strong>Bo.El Eden - Managua - Managua - Nicaragua</strong></p>
+            <p id="email"><strong>contactus@managuachamber.nic</strong></p>
+            <p id="phone"><strong>(+505)800-0000</strong></p>
+            <p id="map"><a href="index.html" class="mapa">Location Map</a></p>
+        </div>
+        <div class="info-stats">
+            <p>&copy; <span id="currentYear"></span> Managua Chamber | <span id="lastModified"></span> </p>
+        </div>
+    </footer>
+    <script src="script/getDate.js"></script>
+    <script src="script/responsive-menu.js"></script>
+    <script src="script/visitCounter.js"></script>
+    <script src="script/lazy-load.js"></script>
+    <script src="script/formDate.js"></script>
+
+</body>
+
+</html>
