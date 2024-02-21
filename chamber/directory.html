@@ -36,7 +36,7 @@
         <nav>
             <button id="hamburger-btn"></button>
             <ul>
-                <li><a href="/chamber/index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="/chamber/discover.html">Discover</a></li>
                 <li><a href="/chamber/directory.html">Directory</a></li>
                 <li><a href="/chamber/join.html">Join</a></li>
@@ -44,50 +44,14 @@
         </nav>
     </header>
 
-    <main class="home-grid">
-
-        <div class="hero">
-            <picture id="hero"> <!--hero Image-->
-                <source media="(max-width: 600px)" srcset="images/managua.webp">
-                <source media="(min-width: 601px) and (max-width: 1280px)" srcset="images/managualarge.webp">
-                <source media="(min-width: 1280px)" srcset="images/managualarge.webp">
-                <img src="images/managualarge.webp" alt="Picture of Managua city" loading="lazy" width="800"
-                    height="400">
-            </picture>
-            <div class="call-to-action">
-                <button id="button" onclick="window.location.href='join.html';">Join the Chamber</button>
-            </div>
+    <main class="directory-grid">
+        <div class="menu">
+            <button id="grid">⏹️Grid</button>
+            <button id="list">📄List</button>
         </div>
-
-        <!-- Current Events Section -->
-        <section class="events">
-            <!-- current events content goes here-->
-            <h2>Current Events</h2>
-            <h3>Dessert & Cake</h3>
-            <h4>Opening store</h4>
-            <p>Get Special Discount 70%<br>
-                For Grand Opening
-            </p>
-        </section>
-        <!--Weather-->
-        <section class="weather">
-            <h2>Weather</h2>
-            <div>
-                <h3>Managua, Nicaragua</h3>
-                <p><span id="temp">__</span>&deg;F</p>
-                <figure>
-                    <img src="#" alt="#">
-                </figure>
-            </div>
-        </section>
-
-        <!-- Spotlights-->
-        <section class="spotlights">
-            <h2>Spotlights</h2>
-            <p>Drug Store La Esperanza</p>
-            <p>Build A Tree Fort</p>
-            <p>Super Express La Salvadorita</p>
-        </section>
+        <hr>
+        <article class="grid">
+        </article>
     </main>
 
     <footer>
@@ -108,9 +72,9 @@
     </footer>
     <script src="script/getDate.js"></script>
     <script src="script/responsive-menu.js"></script>
-    <script src="script/visitCounter.js"></script>
-    <script src="script/lazy-load.js"></script>
 
+    <script src="script/lazy-load.js"></script>
+    <script src="script/directory.js"></script>
 </body>
 
 </html>

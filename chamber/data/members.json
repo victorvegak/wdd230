@@ -1,0 +1,67 @@
+{
+    "companies": [
+        {
+            "name": "IMPORTACIONES BETANCO",
+            "address": "Semáforos Mayoreo 800 Mts al Oe",
+            "phone": "+505 8211 2622",
+            "website": "www.importacionesbetanco.com",
+            "imageurl": "images/ferreteria.webp",
+            "membership": "gold",
+            "slogan": "Quality, variety and guarantee"
+        },
+        {
+            "name": "Discampo - Distribuidora del Campo SA",
+            "address": "Km 6.5 Carretera Norte, Complejo Inagor",
+            "phone": "+505 2248 1470",
+            "website": "www.discampo.com.ni",
+            "imageurl": "images/discampo.webp",
+            "membership": "silver",
+            "slogan": "Working with you from dawn to dusk."
+        },
+        {
+            "name": "INNOVATEC",
+            "address": "Km 14 Carret A Masaya Res Planes de Veracruz 300 Mts al E.",
+            "phone": "+505 8338 6063",
+            "website": "www.innovatec.net.ni",
+            "imageurl": "images/innovatec.webp",
+            "membership": "silver",
+            "slogan": "Construction Finishes and System."
+        },
+        {
+            "name": "TRANSPORTES NUÑEZ",
+            "address": "Carretera Norte, edificio Armando Guido 1/2 c al lago M/D",
+            "phone": "+505 8967 6238",
+            "website": "www.acarreosymudanzas.com",
+            "imageurl": "images/trasportenunez.webp",
+            "membership": "bronze",
+            "slogan": "Transportation of merchandise in general."
+        },
+        {
+            "name": "El cerdito crujiente",
+            "address": "Lomas del Notre Dame, del Portón Principal del Colegio Notre Dame. 2 c al oeste 1/2 C. al Norte.",
+            "phone": "+505 8869 0000",
+            "website": "https://www.gurugo.com.ni/empresas/el-cerdito-crujiente/managua-34127770?ad=80651512",
+            "imageurl": "images/cerdito.webp",
+            "membership": "bronze",
+            "slogan": "Less Fat, More Meat and Always Crispy!"
+        },
+        {
+            "name": "Bufette Bon Appétit",
+            "address": "Del Auto Lote del Norte 6 cuadras al Este",
+            "phone": "+505 5881 3596",
+            "website": "www.buffetbonappetit.com",
+            "imageurl": "images/logobonappetit.webp",
+            "membership": "gold",
+            "slogan": "Typical Nicaraguan food."
+        },
+        {
+            "name": "Hotel Casa Barcelona",
+            "address": "Puente Palmira 1c al Este 1c al S 25vrs al Este",
+            "phone": "+505 8880 4075",
+            "website": "www.hotelcasabarcelona.com",
+            "imageurl": "images/casabarcelonalogo.webp",
+            "membership": "silver",
+            "slogan": "The ideal place to stay in Granada."
+        }
+    ]
+}
