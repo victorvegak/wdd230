@@ -25,7 +25,7 @@
 <body>
     <span id="banner" style="display: none;"></span>
     <header>
-        <img id="header-logo" src="images/header-logo.webp" alt="Managua Chamber Logo" width="100" height="100">
+        <img id="header-logo" src="images/logoop.webp" alt="Managua Chamber Logo" width="100" height="100">
         <h1>Managua City Chamber Of Commerce</h1>
         <div id="social-medias">
             <a href="https://www.facebook.com/"><img id="link-facebook" src="images/facebook.png" alt="Facebook Logo"
@@ -54,6 +54,7 @@
                 <img src="images/managualarge.webp" alt="Picture of Managua city" loading="lazy" width="800"
                     height="400">
             </picture>
+            <h2 class="hero-title">Welcome to Managua City</h2>
             <div class="call-to-action">
                 <button id="button" onclick="window.location.href='join.html';">Join the Chamber</button>
             </div>
@@ -74,20 +75,32 @@
             <h2>Weather</h2>
             <div>
                 <h3>Managua, Nicaragua</h3>
-                <p><span id="temp">__</span>&deg;F</p>
                 <figure>
-                    <img src="#" alt="#">
+                    <img id="weather-icon" src="#" alt="Weather Icon API">
+                    <span id="current-temp"></span>
+                    <figcaption id="description"></figcaption>
                 </figure>
+            </div>
+            <div class="forecast">
+                <h4>Three-Day Forecast</h4>
+                <div id="forecast-container" class="box-content">
+                    <!-- Forecast data will be dynamically added here -->
+                </div>
             </div>
         </section>
 
         <!-- Spotlights-->
         <section class="spotlights">
-            <h2>Spotlights</h2>
-            <p>Drug Store La Esperanza</p>
-            <p>Build A Tree Fort</p>
-            <p>Super Express La Salvadorita</p>
+            <h2 class="spotlightsh1">Spotlights</h2>
+            <div id="spotlight1"></div>
+            <div id="spotlight2"></div>
+            <div id="spotlight3"></div>
         </section>
+
+        <div id="banners">
+            <span id="banner"></span>
+        </div>
+
     </main>
 
     <footer>
@@ -110,7 +123,10 @@
     <script src="script/responsive-menu.js"></script>
     <script src="script/visitCounter.js"></script>
     <script src="script/lazy-load.js"></script>
-
+    <script src="script/weather.js"></script>
+    <script src="script/forecast.js"></script>
+    <script src="script/spotlight.js"></script>
+    <script src="script/banner.js"></script>
 </body>
 
 </html>
